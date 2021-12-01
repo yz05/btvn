@@ -6,25 +6,20 @@ public class bai2 {
 	
 	 public static double tinhS(int n){
 	        if(n<=0)
-	            return 0;
+	            return n;
 	        return Math.pow(-1,(n+1))*n + tinhS(n-1);
 	    }
 
-	    public static int tong(int n){
-	        if (n<1){
-	            return n;
-	        }
-	        return n+ tong(n-1);
-	    }
 	    public static void main(String[] args) {
-	    	int n ; int S = 0 ; 
+	    	int n ;  
 	    	Scanner sc = new Scanner (System.in);
 	    	do {
 	            System.out.println("Mời bạn nhập vào số n: ");
 	            n = sc.nextInt();
 	        } while (n < 1);
-	        System.out.println(tong(n));
+	        System.out.println(tinhS(n));
 	    }
+
 }
 //	 public static void main(String[] args) {
 //	        int n, S = 0;
